@@ -2,17 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Form</title>
-  <link rel="stylesheet" href="styla.css">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <form id="contactForm" action="/submit" method="POST">
-    <h2>Sign up</h2>
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="text" name="branch" placeholder="Branch" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button><a href="index1.html">Verify</a></button>
-  </form>
+  <h1>Rock Paper Scissors</h1>
+<div class="boxi">
+    <div class="container1">
+        <h2>User's Choice</h2>
+        <div class="game-container">
+          <button class="choice-btn" onclick="play('rock')">
+            <img src="sto.png" alt="Rock"> <h3>Rock</h3>
+          </button>
+          <button class="choice-btn" onclick="play('paper')">
+            <img src="pap.png" alt="Paper"> <h3>Paper</h3>
+          </button>
+          <button class="choice-btn" onclick="play('scissors')">
+            <img src="sci.png" alt="Scissors"> <h3>Scissors</h3>
+          </button>
+        </div>
+    </div>
+    
+    <div class="vs">
+        <img width="150px" src="vs.png" alt="">
+    </div>
+    <div class="container1">
+        <h2>Computer's Choice</h2>
+        <div class="game-container">
+          <button class="choice-btn" >
+            <img src="sto.png" alt="Rock"><h3>Rock</h3>
+          </button>
+          <button class="choice-btn" >
+            <img src="pap.png" alt="Paper"><h3>Paper</h3>
+          </button>
+          <button class="choice-btn" >
+            <img src="sci.png" alt="Scissors"><h3>Scissors</h3>
+          </button>
+        </div>
+    </div>
+</div>
+
+  <div id="result"></div>
+  <h1 style="background-color: aliceblue; color: black; border-radius: 5px;">Anime Description</h1>
+ <div class="anime">
+    <div class="div1">
+        <img src="shinobu-removebg-preview.png" alt=""><h3>LADY SHINOBU</h3><img src="sound_hashira-removebg-preview.png" alt=""><h3>SOUND HASHIRA</h3>
+    </div>
+    <div class="div2">
+        <img src="tanjiro-removebg-preview.png" alt=""><h3>TANJIRO KAMADO</h3>
+    </div>
+    <div class="div3">
+        <img src="water_hashira-removebg-preview.png" alt=""> <h3>WATER HASHIRA</h3><img src="zenitsu-removebg-preview.png" alt=""><h3>ZENITSU</h3>
+    </div>
+ </div>
+  <div class="but"><a href="index2.html"><button>Next Page</button></a></div>
+  <script src="script.js"></script>
 </body>
+
 </html>
